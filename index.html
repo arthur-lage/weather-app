@@ -6,8 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
+        <h1>Clima</h1>
+        <form method="GET" id="city-form">
+            <div class="group-form">
+                <input type="text" id="city-input" placeholder="Nome da cidade: ">
+            </div>
+        </form>
+        <div id="results" class="results">
+            <h2 id="city-text"></h2>
+            <h2 id="max-temperature-text"></h2>
+            <h2 id="temperature-text"></h2>
+            <h2 id="min-temperature-text"></h2>
+            <h2 id="cloud-quantity-text"></h2>
+        </div>
+    </div>
+    <footer>Arthur Lage || Open Weather API</footer>
     <script src="app.js"></script>
 </body>
 </html>

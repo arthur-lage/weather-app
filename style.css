@@ -3,3 +3,117 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("background.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: "Montserrat";
+    color: white;
+    padding-top: 2rem;
+}
+
+.group-form{
+    text-align: center;
+    margin: 2rem;
+}
+
+#city-input{
+    width: 400px;
+    height: 40px;
+    padding: 5px;
+    font-size: 1rem;
+    outline: none;
+    font-weight: 600;
+    font-family: "Montserrat";
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5)
+}
+
+#city-input:focus{
+    border: 1px solid black;
+}
+
+.results{
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    transition: .3s ease;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: rgba(140, 186, 255, 0.24);
+    backdrop-filter: blur(20px);
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    padding: 30px 15px;
+    max-height: 500px;
+
+}
+
+.results *{
+    margin: 1rem 0;
+}
+
+.results #city-text{
+    font-family: "Montserrat";
+    font-size: 1.75rem;
+    color: white;
+    font-weight: 300;
+}
+
+.results #temperature-text{
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 300;
+}
+
+.results #cloud-quantity-text{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 300;
+    font-family: "Montserrat";
+}
+
+.results #min-temperature-text{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 300;
+    font-family: "Montserrat";
+}
+
+.results #max-temperature-text{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 300;
+    font-family: "Montserrat";
+}
+
+footer{
+    font-size: 1rem;
+    font-family: "Montserrat";
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+}
