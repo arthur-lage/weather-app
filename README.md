@@ -31,6 +31,6 @@ You can [Click Here](https://arthur-lage-weather-app.vercel.app/) to use it.
 
 # App Images and GIFs
 
-![Image 1]()
-![Image 2]()
-![App GIF]()
+![Image 1](https://github.com/arthur-lage/weather-app/blob/main/assets/image1.png)
+![Image 2](https://github.com/arthur-lage/weather-app/blob/main/assets/image2.png)
+![App GIF](https://github.com/arthur-lage/weather-app/blob/main/assets/app.gif)
