@@ -10,6 +10,7 @@ body{
     background-repeat: no-repeat;
     backdrop-filter: blur(5px);
     background-size: cover;
+    width: 100vw;
 }
 
 .container{
@@ -31,6 +32,10 @@ h1{
 .group-form{
     text-align: center;
     margin: 2rem;
+}
+
+.group-form *{
+    margin: 0 2rem;
 }
 
 #city-input{
@@ -121,6 +126,7 @@ footer{
 
 #consult-button{
     height: 40px;
+    text-transform: uppercase;
     width: 150px;
     color: white;
     margin: 0;
@@ -140,4 +146,583 @@ footer{
 #consult-button:hover{
     border-bottom: 6px solid rgb(44, 44, 124);
     background-color: rgb(44, 44, 121);
+}
+
+
+@media (max-width: 2560px){
+    h1{
+        font-size: 10rem;
+    }
+
+    .group-form{
+        margin: 3.5rem 0;
+    }
+
+    #consult-button{
+        width: 600px;
+        height: 75px; 
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+
+    #city-input{
+        width: 600px;
+        height: 75px;
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+
+    .results{
+        max-width: 1000px;
+        padding: 20rem 5rem;
+        margin-top: 17rem;
+    }
+
+    .results #city-text{
+        font-size: 4rem;
+    }
+
+    .results #max-temperature-text{
+        font-size: 3rem;
+    }
+        
+    .results #temperature-text{
+        font-size: 3rem;
+    }
+
+    .results #min-temperature-text{
+        font-size: 3rem;
+    }
+
+    .results #cloud-quantity-text{
+        font-size: 3rem;
+    }
+            
+    footer{
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 1440px){
+    h1{
+        font-size: 5rem;
+    }
+
+    .group-form{
+        margin: 3.5rem 0;
+    }
+
+    #consult-button{
+        width: 300px;
+        height: 60px; 
+        font-size: 2.5rem;
+        padding: 5px;
+    }
+
+    #city-input{
+        width: 450px;
+        height: 60px;
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+
+    .results{
+        max-width: 600px;
+        padding: 8.5rem 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .results #city-text{
+        font-size: 3rem;
+    }
+
+    .results #max-temperature-text{
+        font-size: 2rem;
+    }
+        
+    .results #temperature-text{
+        font-size: 2rem;
+    }
+
+    .results #min-temperature-text{
+        font-size: 2rem;
+    }
+
+    .results #cloud-quantity-text{
+        font-size: 2rem;
+    }
+            
+    footer{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1366px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("background.jpg");
+        height: 100vh;
+        background-repeat: no-repeat;
+        backdrop-filter: blur(5px);
+        background-size: cover;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-family: "Montserrat";
+        color: white;
+        padding-top: 2rem;
+    }
+    
+    .group-form{
+        text-align: center;
+        margin: 2rem;
+    }
+    
+    .group-form *{
+        margin: 0 2rem;
+    }
+    
+    #city-input{
+        width: 400px;
+        height: 40px;
+        padding: 5px;
+        font-size: 1rem;
+        outline: none;
+        font-weight: 600;
+        font-family: "Montserrat";
+        border-radius: 5px;
+        border: 1px solid transparent;
+        transition: 0.3s ease;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.5)
+    }
+    
+    #city-input:focus{
+        border: 1px solid black;
+    }
+    
+    .results{
+        opacity: 0;
+        pointer-events: none;
+        display: flex;
+        transition: .3s ease;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(20px);
+        box-shadow: 0px 0px 5px black;
+        width: 100%;
+        margin: 0;
+        max-width: 500px;
+        height: 100%;
+        padding: 30px 15px;
+        max-height: 500px;
+    }
+    
+    .results *{
+        margin: 1rem 0;
+    }
+    
+    .results #city-text{
+        font-family: "Open Sans";
+        font-size: 1.75rem;
+        color: black;
+        font-weight: 600;
+    }
+    
+    .results #temperature-text{
+        font-family: "Open Sans";
+        font-size: 1.5rem;
+        color: black;
+        font-weight: 500;
+    }
+    
+    .results #cloud-quantity-text{
+        font-size: 1.5rem;
+        color: black;
+        font-weight: 500;
+        font-family: "Open Sans";
+    }
+    
+    .results #min-temperature-text{
+        font-size: 1.5rem;
+        color: black;
+        font-weight: 500;
+        font-family: "Open Sans";
+    }
+    
+    .results #max-temperature-text{
+        font-size: 1.5rem;
+        color: black;
+        font-weight: 500;
+        font-family: "Open Sans";
+    }
+    
+    footer{
+        font-size: 1rem;
+        font-family: "Montserrat";
+        color: white;
+        position: absolute;
+        bottom: 5px;
+        right: 15px;
+    }
+    
+    #consult-button{
+        height: 40px;
+        width: 150px;
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        font-size: 1.2rem;
+        font-family: "Montserrat";
+        transition: 0.1s ease;
+        background-color: rgb(75, 75, 168);
+        border: 0;
+        border-radius: 5px;
+        cursor: pointer;
+        border-bottom: 6px solid rgb(47, 47, 145);
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    #consult-button:hover{
+        border-bottom: 6px solid rgb(44, 44, 124);
+        background-color: rgb(44, 44, 121);
+    }
+    
+}
+
+@media (max-width: 1024px){
+    h1{
+        font-size: 3rem;
+    }
+
+    .group-form{
+        margin: 3.5rem 0;
+    }
+
+    #consult-button{
+        width: 300px;
+        height: 55px; 
+        font-size: 2.1rem;
+    }
+
+    #city-input{
+        width: 450px;
+        height: 55px;
+        font-size: 2.1rem;
+        padding: 5px;
+    }
+
+    .results{
+        max-width: 500px;
+    }
+
+    .results #city-text{
+        font-size: 2.25rem;
+    }
+
+    .results #max-temperature-text{
+        font-size: 1.75rem;
+    }
+        
+    .results #temperature-text{
+        font-size: 1.75rem;
+    }
+
+    .results #min-temperature-text{
+        font-size: 1.75rem;
+    }
+
+    .results #cloud-quantity-text{
+        font-size: 1.75rem;
+    }
+            
+    footer{
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 768px){
+    h1{
+        font-size: 3rem;
+        padding-top: 1rem;
+    }
+
+    .group-form{
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .group-form *{
+        margin: 1.5rem 0;
+    }
+
+    #consult-button{
+        width: 300px;
+        height: 45px; 
+        font-size: 1.5rem;
+    }
+
+    #city-input{
+        width: 450px;
+        font-weight: 400;
+        height: 45px;
+        font-size: 1.75rem;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .results{
+        height: 17.5rem;
+        max-width: 400px;
+        padding: 0;
+        margin: 1rem 0;
+    }
+
+    .results *{
+        margin: 0.5rem
+    }
+
+    .results #city-text{
+        font-size: 1.5rem;
+    }
+
+    .results #max-temperature-text{
+        font-size: 1.3rem;
+    }
+        
+    .results #temperature-text{
+        font-size: 1.3rem;
+    }
+
+    .results #min-temperature-text{
+        font-size: 1.3rem;
+    }
+
+    .results #cloud-quantity-text{
+        font-size: 1.3rem;
+    }
+            
+    footer{
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 425px){
+    h1{
+        font-size: 2rem;
+        padding-top: 1rem;
+    }
+
+    .group-form{
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .group-form *{
+        margin: 1.5rem 0;
+    }
+
+    #consult-button{
+        width: 300px;
+        height: 40px; 
+        font-size: 1.5rem;
+    }
+
+    #city-input{
+        width: 350px;
+        font-weight: 400;
+        height: 40px;
+        font-size: 1.5rem;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .results{
+        height: 17.5rem;
+        max-width: 350px;
+        padding: 0;
+        margin: 1rem 0;
+    }
+
+    .results *{
+        margin: 0.5rem
+    }
+
+    .results #city-text{
+        font-size: 1.5rem;
+    }
+
+    .results #max-temperature-text{
+        font-size: 1.3rem;
+    }
+        
+    .results #temperature-text{
+        font-size: 1.3rem;
+    }
+
+    .results #min-temperature-text{
+        font-size: 1.3rem;
+    }
+
+    .results #cloud-quantity-text{
+        font-size: 1.3rem;
+    }
+            
+    footer{
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 375px){
+    .group-form{
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .group-form *{
+        margin: 1.5rem 0;
+    }
+
+    #consult-button{
+        width: 275px;
+        height: 40px; 
+        font-size: 1.5rem;
+    }
+
+    #city-input{
+        width: 325px;
+        font-weight: 400;
+        height: 40px;
+        font-size: 1.5rem;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .results{
+        height: 17.5rem;
+        max-width: 350px;
+        padding: 0;
+        margin: 1rem 0;
+    }
+
+    .results *{
+        margin: 0.5rem
+    }
+
+    .results #city-text{
+        font-size: 1.5rem;
+    }
+
+    .results #max-temperature-text{
+        font-size: 1.3rem;
+    }
+        
+    .results #temperature-text{
+        font-size: 1.3rem;
+    }
+
+    .results #min-temperature-text{
+        font-size: 1.3rem;
+    }
+
+    .results #cloud-quantity-text{
+        font-size: 1.3rem;
+    }
+            
+    footer{
+        font-size: .8rem;
+    }
+}
+
+
+@media (max-width: 320px){
+    .group-form{
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .group-form *{
+        margin: 1.5rem 0;
+    }
+
+    #consult-button{
+        width: 225px;
+        height: 40px; 
+        font-size: 1.5rem;
+    }
+
+    #city-input{
+        width: 285px;
+        font-weight: 400;
+        height: 40px;
+        font-size: 1.5rem;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .results{
+        height: 15rem;
+        max-width: 300px;
+        padding: 0;
+        margin: 2rem 0;
+    }
+
+    .results *{
+        margin: 0.5rem
+    }
+
+    .results #city-text{
+        font-size: 1.25rem;
+    }
+
+    .results #max-temperature-text{
+        font-size: 1rem;
+    }
+        
+    .results #temperature-text{
+        font-size: 1rem;
+    }
+
+    .results #min-temperature-text{
+        font-size: 1rem;
+    }
+
+    .results #cloud-quantity-text{
+        font-size: 1rem;
+    }
+            
+    footer{
+        font-size: .8rem;
+    }
 }
